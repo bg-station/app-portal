@@ -1,0 +1,67 @@
+name: Validate apps.json
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'apps.json'
+  pull_request:
+    paths:
+      - 'apps.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Validate JSON syntax
+        run: |
+          if ! python3 -m json.tool apps.json > /dev/null 2>&1; then
+            echo "❌ apps.json contains invalid JSON syntax"
+            python3 -m json.tool apps.json
+            exit 1
+          else
+            echo "✅ apps.json is valid JSON"
+          fi
+      
+      - name: Validate app data structure
+        run: |
+          python3 << 'EOF'
+          import json
+          import sys
+          
+          with open('apps.json', 'r', encoding='utf-8') as f:
+              apps = json.load(f)
+          
+          if not isinstance(apps, list):
+              print("❌ apps.json must be an array")
+              sys.exit(1)
+          
+          required_fields = ['title', 'description', 'category']
+          valid_categories = ['web', 'tool', 'game', 'other']
+          
+          for i, app in enumerate(apps):
+              # Check required fields
+              for field in required_fields:
+                  if field not in app or not app[field]:
+                      print(f"❌ App {i+1}: Missing required field '{field}'")
+                      sys.exit(1)
+              
+              # Validate category
+              if app['category'] not in valid_categories:
+                  print(f"❌ App {i+1}: Invalid category '{app['category']}'. Must be one of: {valid_categories}")
+                  sys.exit(1)
+              
+              # Validate tags if present
+              if 'tags' in app and app['tags']:
+                  if not isinstance(app['tags'], list):
+                      print(f"❌ App {i+1}: 'tags' must be an array")
+                      sys.exit(1)
+          
+          print(f"✅ All {len(apps)} apps are valid")
+          EOF
