@@ -1,20 +1,47 @@
 [
-    {
-        "title": "サンプルアプリ1",
-        "description": "これはサンプルのアプリケーションです。このテンプレートを参考にして、実際のアプリ情報を追加してください。",
-        "category": "web",
-        "tags": ["JavaScript", "HTML", "CSS"],
-        "thumbnail": "",
-        "demoUrl": "https://example.com/app1",
-        "repoUrl": "https://github.com/bg-station/app1"
-    },
-    {
-        "title": "サンプルアプリ2",
-        "description": "別のサンプルアプリケーションです。複数のアプリを追加できます。",
-        "category": "tool",
-        "tags": ["Python", "CLI"],
-        "thumbnail": "",
-        "demoUrl": "",
-        "repoUrl": "https://github.com/bg-station/app2"
-    }
+  {
+    "title": "kokosuki",
+    "description": "楽曲の「ココが好き！」を共有するサービス",
+    "category": "web",
+    "tags": ["TypeScript", "JavaScript", "Next.js"],
+    "thumbnail": "img/kokosuki-logo.png",
+    "siteUrl": "https://kokosuki.bg-station.com",
+    "repoUrl": ""
+  },
+  {
+    "title": "outwordAI",
+    "description": "AIを欺くワード当てゲーム",
+    "category": "game",
+    "tags": ["TypeScript", "JavaScript", "Next.js", "Node.js", "Gemini"],
+    "thumbnail": "img/outwordai-logo.png",
+    "siteUrl": "https://outwordai.bg-station.com",
+    "repoUrl": ""
+  },
+  {
+    "title": "ThemeBingo",
+    "description": "簡単に共有できるビンゴ作成ツール",
+    "category": "tool",
+    "tags": ["TypeScript", "Vite"],
+    "thumbnail": "img/themebingo-logo.png",
+    "siteUrl": "https://theme-bingo.bg-station.com",
+    "repoUrl": ""
+  },
+  {
+    "title": "(鋭意製作中)\nTaskSwipe（仮）",
+    "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
+    "category": "other",
+    "tags": ["React Native"],
+    "thumbnail": "",
+    "siteUrl": "",
+    "repoUrl": ""
+  },
+  {
+    "title": "(鋭意製作中)\nriddle01",
+    "description": "アプリ製作謎 第1弾",
+    "category": "game",
+    "tags": [],
+    "thumbnail": "",
+    "siteUrl": "",
+    "repoUrl": ""
+  }
 ]

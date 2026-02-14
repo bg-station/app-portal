@@ -11,7 +11,7 @@
     "category": "tool",
     "tags": ["JavaScript", "Node.js"],
     "thumbnail": "",
-    "demoUrl": "https://example.com/my-app",
+    "siteUrl": "https://example.com/my-app",
     "repoUrl": "https://github.com/bg-station/my-app"
 }
 ```
@@ -24,8 +24,8 @@
 | `description` | ✅ | アプリの説明文 | `"タスクを管理するためのシンプルなアプリ"` |
 | `category` | ✅ | カテゴリ (`web`, `tool`, `game`, `other`のいずれか) | `"tool"` |
 | `tags` | ❌ | 技術タグの配列 | `["React", "TypeScript", "Firebase"]` |
-| `thumbnail` | ❌ | サムネイル画像のURL | `"https://example.com/thumbnail.png"` |
-| `demoUrl` | ❌ | デモサイトのURL | `"https://my-app.github.io"` |
+| `thumbnail` | ❌ | サムネイル画像（URL または相対パス） | `"img/thumbnail.png"` / `"https://example.com/thumbnail.png"` |
+| `siteUrl` | ❌ | 公開URL（本番稼働しているURL） | `"https://my-app.example.com"` |
 | `repoUrl` | ❌ | GitHubリポジトリのURL | `"https://github.com/user/repo"` |
 
 ## カテゴリの選択
@@ -45,7 +45,7 @@
         "category": "web",
         "tags": ["React", "LocalStorage"],
         "thumbnail": "https://example.com/todo-thumbnail.png",
-        "demoUrl": "https://example.com/todo-app",
+        "siteUrl": "https://example.com/todo-app",
         "repoUrl": "https://github.com/bg-station/todo-app"
     },
     {
@@ -54,7 +54,7 @@
         "category": "tool",
         "tags": ["Python", "CLI"],
         "thumbnail": "",
-        "demoUrl": "",
+        "siteUrl": "",
         "repoUrl": "https://github.com/bg-station/code-formatter"
     },
     {
@@ -63,7 +63,7 @@
         "category": "game",
         "tags": ["JavaScript", "Canvas", "HTML5"],
         "thumbnail": "https://example.com/puzzle-thumbnail.png",
-        "demoUrl": "https://example.com/puzzle-game",
+        "siteUrl": "https://example.com/puzzle-game",
         "repoUrl": "https://github.com/bg-station/puzzle-game"
     }
 ]
@@ -81,6 +81,22 @@
    - Cloudinary
    - その他の画像ホスティングサービス
 
+### サムネイルを相対パスで指定する
+
+このプロジェクトでは、`thumbnail` は **相対パス指定でもOK** です（`index.html` のURLを基準に解決されます）。
+
+例:
+
+```json
+{
+    "thumbnail": "img/kokosuki.png"
+}
+```
+
+注意:
+
+- `"/img/kokosuki.png"` のように **`/` で始めるパス**は、GitHub Pages（`/<repo>/` 配下）で意図と違う場所を指すことがあるため、`"img/..."` または `"./img/..."` を推奨します。
+
 ### 画像がない場合
 
 `thumbnail`フィールドを空文字列（`""`）にすると、自動的にグラデーション付きのプレースホルダー画像が生成されます。
@@ -91,6 +107,17 @@
 2. **文字列**は必ずダブルクォート（`"`）で囲む
 3. **改行やタブ**は使用可能（可読性のため推奨）
 4. **URLは完全なURL**を記載（`https://`から始める）
+    - ※ ただし `thumbnail` は、完全なURLに加えて `"img/..."` のような相対パス指定も可能です
+
+### title に改行を入れる
+
+`title` を2行表示したい場合は、JSON文字列内で改行を直接入れるのではなく、`\n` を使ってください（JSONとして正しい書き方です）。
+
+```json
+{
+    "title": "1行目\n2行目"
+}
+```
 
 ### 間違った例 ❌
 

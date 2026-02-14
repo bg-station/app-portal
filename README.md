@@ -4,7 +4,9 @@ bg-stationで作成したアプリを集めて公開するHubサイトです。
 
 ## 🚀 デモ
 
-GitHub Pagesで公開されています: `https://bg-station.github.io/app-portal/`
+GitHub Pagesで公開されています
+-  `https://bg-station.github.io/app-portal/`
+-  カスタムドメイン設定済：`https://bg-station.com/`
 
 ## 📝 アプリの追加方法
 
@@ -18,7 +20,7 @@ GitHub Pagesで公開されています: `https://bg-station.github.io/app-porta
     "category": "web | tool | game | other",
     "tags": ["タグ1", "タグ2"],
     "thumbnail": "画像のURL（オプション）",
-    "demoUrl": "デモサイトのURL（オプション）",
+    "siteUrl": "公開URL（本番稼働しているURL）（オプション）",
     "repoUrl": "GitHubリポジトリのURL（オプション）"
 }
 ```
