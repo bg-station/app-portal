@@ -1,0 +1,20 @@
+[
+    {
+        "title": "サンプルアプリ1",
+        "description": "これはサンプルのアプリケーションです。このテンプレートを参考にして、実際のアプリ情報を追加してください。",
+        "category": "web",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "thumbnail": "",
+        "demoUrl": "https://example.com/app1",
+        "repoUrl": "https://github.com/bg-station/app1"
+    },
+    {
+        "title": "サンプルアプリ2",
+        "description": "別のサンプルアプリケーションです。複数のアプリを追加できます。",
+        "category": "tool",
+        "tags": ["Python", "CLI"],
+        "thumbnail": "",
+        "demoUrl": "",
+        "repoUrl": "https://github.com/bg-station/app2"
+    }
+]
