@@ -51,6 +51,15 @@
     "repoUrl": ""
   },
   {
+    "title": "(鋭意製作中)\nPochitto",
+    "description": "ポチッと押して足跡を残す地図足跡プラットフォームアプリ",
+    "category": "other",
+    "tags": ["React Native"],
+    "thumbnail": "",
+    "siteUrl": "",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nriddle01",
     "description": "アプリ製作謎 第1弾",
     "category": "game",
