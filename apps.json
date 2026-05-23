@@ -27,6 +27,21 @@
     "repoUrl": ""
   },
   {
+    "title": "Q-Generator",
+    "description": "英語のリスニング問題を自動生成し勉強をサポートするサービス",
+    "category": "web",
+    "tags": [
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "OpenAI API",
+      "Google Cloud Text-to-Speech"
+    ],
+    "thumbnail": "",
+    "siteUrl": "https://q-generator.bg-station.com",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nTaskSwipe（仮）",
     "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
     "category": "other",
