@@ -42,6 +42,15 @@
     "repoUrl": ""
   },
   {
+    "title": "ころころ",
+    "description": "スワイプやスマホを振る操作でサイコロを転がすWebアプリ。1〜5個のサイコロを振り、各面を好きな数字や言葉に変更できます。",
+    "category": "tool",
+    "tags": ["JavaScript"],
+    "thumbnail": "",
+    "siteUrl": "https://korokoro-8ba34.web.app",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nTaskSwipe（仮）",
     "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
     "category": "other",
