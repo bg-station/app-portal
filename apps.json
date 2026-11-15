@@ -69,6 +69,15 @@
     "repoUrl": ""
   },
   {
+    "title": "CorrectAns",
+    "description": "お題に合う単語を考え、AIが付けた適切度で競うWebゲーム。",
+    "category": "game",
+    "tags": ["TypeScript", "Next.js", "React", "Node.js", "TypeSafe Jev API"],
+    "thumbnail": "",
+    "siteUrl": "https://correctans--correctans.us-central1.hosted.app",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nTaskSwipe（仮）",
     "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
     "category": "other",
