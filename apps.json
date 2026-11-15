@@ -60,6 +60,15 @@
     "repoUrl": ""
   },
   {
+    "title": "推しピン",
+    "description": "テーマを作成し、QRコード付きボタンを発行して位置情報を地図に記録するアプリ。「推し」＋「押し」＋「ピン」から名付けました。",
+    "category": "web",
+    "tags": ["JavaScript", "Firebase", "Firestore", "Leaflet"],
+    "thumbnail": "img/oshipin-logo.png",
+    "siteUrl": "https://oshipin-2c87a.web.app",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nTaskSwipe（仮）",
     "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
     "category": "other",
