@@ -51,6 +51,15 @@
     "repoUrl": ""
   },
   {
+    "title": "今日の一皿",
+    "description": "ごはんの写真を1日1枚「流す」と、誰かが流した一皿が届くWebアプリ。",
+    "category": "web",
+    "tags": ["JavaScript", "Node.js", "Firebase"],
+    "thumbnail": "img/kyou-no-hitosara-logo.png",
+    "siteUrl": "https://kyou-no-hitosara.web.app",
+    "repoUrl": ""
+  },
+  {
     "title": "(鋭意製作中)\nTaskSwipe（仮）",
     "description": "直感的なスワイプ操作に特化したタスク管理ネイティブアプリ",
     "category": "other",
